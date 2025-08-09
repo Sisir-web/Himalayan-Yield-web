@@ -13,7 +13,7 @@ from rest_framework import status
 # Register view
 class RegisterView(generics.CreateAPIView):
     queryset = MyUser.objects.all()
-    permission_classes = [permissions.AllowAny]
+    # permission_classes = [permissions.AllowAny]
     serializer_class = RegisterSerializer
 
 # View current user profile
@@ -35,3 +35,4 @@ class LoginView(APIView):
                 return Response({'msg: ''Login Success'},status=status.HTTP_200_OK ) 
             else :
                 return Response({'msg: ''Invalid Email or Password'},status=status.HTTP_404_NOT_FOUND)
+

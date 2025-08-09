@@ -22,7 +22,7 @@ urlpatterns = [
     path('api/shop/',include('product.urls')),
     path('api/trek/',include('trek.urls')),
     path('api/cab/',include('cab.urls')),
-    path('api/account/', include('accounts.urls')),
+    path('api/accounts', include('accounts.urls')),
 ]
 
 
